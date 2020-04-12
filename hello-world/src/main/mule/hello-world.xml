@@ -11,6 +11,10 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:listener doc:name="Listener" doc:id="edaa73f5-8a22-435a-abd4-6f30c8a5d4f3" config-ref="HTTP_Listener_config" path="one"/>
 		<set-payload value="Hello world1" doc:name="Set Payload" doc:id="ee742f53-c726-40a5-a8a7-547244c6cee0" />
 	</flow>
+	<flow name="FlowThree" doc:id="1933285f-adb4-45c5-aff4-506cee8e476f" >
+		<http:listener doc:name="Listener" doc:id="c6915cec-063c-4cbe-9674-1341f34265f0" config-ref="HTTP_Listener_config" path="/three"/>
+		<set-payload value="HelloWorld Three" doc:name="Set Payload" doc:id="ddf20720-df72-4ac5-b8d9-3dc42aff8e7a" />
+	</flow>
 	<flow name="FlowTwo" doc:id="195ac2a2-d462-4d45-88b3-6bcd4e36013b" >
 		<http:listener doc:name="Listener" doc:id="0608416d-e250-4bb2-9673-22692e5c808e" config-ref="HTTP_Listener_config" path="/two"/>
 		<set-payload value="Hello World2" doc:name="Set Payload" doc:id="4f203a22-5d54-4ca9-a796-91c9cea61d2b" />
